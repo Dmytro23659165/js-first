@@ -1,42 +1,63 @@
-let boba = age = 13;
-console.log('boba: ', age);
+let celsius = 25;
+let fahrenheit = (celsius * 9/5) + 32;
+console.log(`Температура в Цельсіях: ${celsius}°C`);
+console.log(`Температура в Фаренгейтах: ${fahrenheit}°F`);
 
 
-let babo = 'dima';
-console.log('babo: ', name);
+let daysInMonth = 30;
+let hoursInMonth = daysInMonth * 24;
+let minutesInMonth = hoursInMonth * 60;
+console.log(`Кількість днів у місяці: ${daysInMonth}`);
+console.log(`Кількість годин у місяці: ${hoursInMonth}`);
+console.log(`Кількість хвилин у місяці: ${minutesInMonth}`);
 
 
-const isStudent = true;
-console.log('isStudent: ', true);
+let health = 100;
+let energy = 75;
+let damage = 20;
+let energyLoss = 15;
+health -= damage;
+energy -= energyLoss;
+console.log(`Рівень здоров'я гравця: ${health}`);
+console.log(`Рівень енергії гравця: ${energy}`);
 
 
-const myString = "В полі вітер в дупі дим файно бути молодим!!!";
-console.log('myString: В полі вітер в дупі дим файно бути молодим!!!');
+let purchaseAmount = 200;
+let discount = 0.10;
+let discountedAmount = purchaseAmount * (1 - discount);
+console.log(`Сума покупки до знижки: ${purchaseAmount}`);
+console.log(`Сума покупки після знижки: ${discountedAmount}`);
 
 
-let myNumber = 3;
-console.log('myNumber: ', 3 + 10);
+let floatingNumber = 7.85;
+let roundedDownNumber = Math.floor(floatingNumber);
+console.log(`Число з плаваючою комою: ${floatingNumber}`);
+console.log(`Число після округлення до меншого: ${roundedDownNumber}`);
 
 
-let myNull = null;
-console.log('myNull: ', null);
+let stringWithFloat = "123.45";
+let floatNumber = parseFloat(stringWithFloat);
+console.log(`Рядок: ${stringWithFloat}`);
+console.log(`Десяткове число: ${floatNumber}`);
 
 
-const hotelName = prompt("введіть будь ласка ваше ім'я");
-console.log(hotelName);
-const hotelthank = alert("дякуєм вам!");
-console.log(hotelthank);
+let stringWithInteger = "12345";
+let integerNumber = parseInt(stringWithInteger, 10);
+console.log(`Рядок: ${stringWithInteger}`);
+console.log(`Ціле число: ${integerNumber}`);
 
 
-
-// let wikno = confirm("Ви впевнені, що хочете продовжити?");\
-// let wiknoText = "lskdjfsldkjflksdjflksjdf";                \
-                                                             //> я тут не розібрався.
-// if (wikno) alert("Дякую за підтвердження!"), yes;          /
-// else alert("Дію відмінено!"), no;                         /
+let number = 144;
+let squareRoot = Math.sqrt(number);
+console.log(`Число: ${number}`);
+console.log(`Квадратний корінь числа: ${squareRoot}`);
 
 
-alert("Увага! Ця дія є небезпечною.");
-let result = confirm("Ви впевнені, що хочете продовжити?");
-if (result) alert("Дякую за підтвердження!");
-else alert("Дію відмінено!");
+let integerValue = 12345;
+let stringWithNumber = "67890";
+let parsedInteger = parseInt(stringWithNumber, 10);
+let stringFromInteger = integerValue.toString();
+console.log(`Рядок з числом: ${stringWithNumber}`);
+console.log(`Перетворений на ціле число: ${parsedInteger}`);
+console.log(`Цілочисельне значення: ${integerValue}`);
+console.log(`Перетворене на рядок: ${stringFromInteger}`);
